@@ -1,0 +1,61 @@
+// This is to override the clearfix mixin
+@mixin clearfix {
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+// Breakpoints
+
+@mixin breakpoint($point) {
+	@if $point == desktopLarge {
+		@media (max-width: $desktopLarge) {
+			@content;
+		}
+	} @else if $point == desktopHD {
+		@media (max-width: $desktopHD) {
+			@content;
+		}
+	} @else if $point == desktopNormal {
+		@media (max-width: $desktopNormal) {
+			@content;
+		}
+	} @else if $point == desktopSmall {
+		@media (max-width: $desktopSmall) {
+			@content;
+		}
+	} @else if $point == tabletLarge {
+		@media (max-width: $tabletLarge) {
+			@content;
+		}
+	} @else if $point == tablet {
+		@media (max-width: $tablet) {
+			@content;
+		}
+	} @else if $point == phablet {
+		@media (max-width: $phablet) {
+			@content;
+		}
+	} @else if $point == mobilexLarge {
+		@media (max-width: $mobilexLarge) {
+			@content;
+		}
+	} @else if $point == mobileLarge {
+		@media (max-width: $mobileLarge) {
+			@content;
+		}
+	} @else if $point == mobileMedium {
+		@media (max-width: $mobileMedium) {
+			@content;
+		}
+	} @else if $point == mobileSmall {
+		@media (max-width: $mobileSmall) {
+			@content;
+		}
+	}
+}

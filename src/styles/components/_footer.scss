@@ -1,0 +1,11 @@
+.footer {
+	padding: 3rem 0;
+	background-color: rgba($grey, 0.03);
+	margin-top: auto;
+	.inner-footer {
+		display: flex;
+		p {
+			color: $greyDark;
+		}
+	}
+}

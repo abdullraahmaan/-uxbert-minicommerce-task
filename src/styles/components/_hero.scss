@@ -1,0 +1,20 @@
+.hero {
+	background-color: rgba($grey, 0.03);
+
+	h1 {
+		font-weight: bold;
+	}
+
+	p {
+		font-size: 2rem;
+		color: $greyDark;
+	}
+
+	.brand {
+		color: $blue;
+	}
+
+	.greeting {
+		color: $greyDark;
+	}
+}
